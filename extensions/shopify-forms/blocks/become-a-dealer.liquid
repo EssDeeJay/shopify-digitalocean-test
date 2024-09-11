@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="{{ 'gwt-global.css' |  asset_url }}" media="print" onload="this.media='all'">
+
+<script src="{{ 'become-dealer.js' | asset_url }}" defer="defer"></script>
+<section id="{{ section.id }}" class="section">
+  <become-dealer class="greenworks">
+    <div class="container">
+       <form id="become-dealer" method="POST" class="form reading-width" charset="UTF-8" enctype="multipart/formdata">
+       <div class="form__grid grid grid-cols-4 gap-x-theme gap-y-6">
+         <div class="col-span-4">
+           <div class="w-full rte">
+             <h2 class="h2 text-center uppercase">BECOME A DEALER</h2>
+             <p><strong>Interested In Becoming A Greenworks Commercial Dealer? Complete The Form And A Representative Will Reach Out To You.</strong></p>
+           </div>
+         </div>
+ 
+         <div class="col-span-4 md:col-span-2 is-required">
+           <label class="label" for="first_name">First Name</label>
+           <input type="text" class="input w-full" id="first_name" name="first_name" aria-required="true" required />
+         </div>
+ 
+         <div class="col-span-4 md:col-span-2 is-required">
+           <label class="label" for="last_name">Last Name</label>
+           <input type="text" class="input w-full" id="last_name" name="last_name" aria-required="true" required />
+         </div>
+ 
+         <div class="col-span-4 is-required">
+           <label class="label" for="dealer_name">Dealer Name</label>
+           <input type="text" class="input w-full" id="dealer_name" name="dealer_name" aria-required="true" required />
+         </div>
+ 
+        <div class="col-span-4 is-required">
+          <div class="grid grid-cols-4 gap-x-theme gap-y-6">
+            
+             <div class="col-span-4 lg:col-span-1">
+               <label class="label" for="city">City</label>
+               <input type="text" class="input w-full" id="city" name="city" aria-required="true" required />
+             </div>
+
+             <div class="col-span-4 lg:col-span-1">
+               <label class="label" for="province">Province</label>
+               <div class="select relative">
+                 <select id="province" name="province" class="w-full input">
+                         <option value="Ontario">Ontario</option>       
+                         <option value="Quebec">Quebec</option>
+                         <option value="Alberta">Alberta</option>
+                         <option value="British Columbia">British Columbia</option>
+                         <option value="Manitoba">Manitoba</option>
+                         <option value="Saskatchewan">Saskatchewan</option>
+                         <option value="Nova Scotia">Nova Scotia</option>
+                         <option value="New Brunswick">New Brunswick</option>
+                         <option value="Yukon">Yukon</option>
+                         <option value="Northwest Territories">Northwest Territories</option>
+                         <option value="Nunavut">Nunavut</option>
+                         <option value="Newfoundland &amp; Labrador">Newfoundland &amp; Labrador</option>
+                         <option value="Prince Edward Island">Prince Edward Island</option>
+                 </select>
+               </div>
+             </div>
+
+             <div class="col-span-4 lg:col-span-1">
+               <label class="label" for="postal_code">Postal Code/ZIP</label>
+               <input type="text" class="input w-full" id="postal_code" name="postal_code" aria-required="true" required />
+             </div>
+
+             <div class="col-span-4 lg:col-span-1">
+              <label class="label" for="phone">Phone</label>
+              <input type="tel" class="input w-full" id="phone" name="phone" autocomplete="tel" aria-required="true" required pattern="[0-9\-]*" />
+             </div>
+ 
+          </div>
+         </div>
+ 
+          <div class="col-span-4 is-required">
+           <label class="label" for="email">Email</label>
+           <input type="email" class="input w-full" id="email" name="email" aria-required="true" required autocomplete="email" />
+          </div>
+ 
+        <div class="col-span-4 is-required">
+           <label class="label">Products Interested In Carrying (check all that apply)</label>
+           <div class="">
+             <ul class="list-options">
+               <div>
+                <input type="checkbox" name="interested_products" id="handheld_equipment" aria-required="true" value="Handheld Equipment">
+                  <label class="label" for="handheld_equipment" style="display: inline-block;">
+                    Handheld Equipment
+                  </label>
+               </div>
+
+               <div>
+                <input type="checkbox" name="interested_products" id="zero_turn_mowers" aria-required="true" value="Zero Turn Mowers">
+                  <label class="label" for="zero_turn_mowers" style="display: inline-block;">
+                    Zero Turn Mowers
+                  </label>
+               </div>
+
+               <div>
+                <input type="checkbox" name="interested_products" id="utility_vehicles" aria-required="true" value="Utility Vehicles">
+                  <label class="label" for="utility_vehicles" style="display: inline-block;">
+                    Utility Vehicles
+                  </label>
+               </div>
+
+               <div>
+                <input type="checkbox" name="interested_products" id="robotics" aria-required="true" value="Robotics">
+                  <label class="label" for="robotics" style="display: inline-block;">
+                    Robotics
+                  </label>
+               </div>
+             </ul>
+           </div>
+        </div>
+
+        <div class="col-span-4">
+          <label class="label" for="comments">What Outdoor Power Equipment brands do you currently carry?</label>
+          <textarea class="input w-full" id="comments" name="comments" rows="8">           
+          </textarea>
+      </div>
+ 
+        <div class="col-span-4 is-required">
+           <input type="checkbox" name="terms_conditions" id="terms" aria-required="true" required value=true>
+              <label class="label" for="terms" style="display: inline-block;">
+                <a href="/policies/terms-of-service">Accept Terms and conditions</a>
+              </label>
+        </div>
+ 
+          <div class="mt-6">
+           <button class="btn btn--primary w-full md:w-auto" type="submit">Submit Request</button>
+         </div>
+         
+       </div>
+     </form>
+     <div id="responseMessage"></div>
+   </div>
+ </become-dealer>
+</section>
+
+{% schema %}
+    {
+      "name": "Become a dealer",
+      "target": "section",
+      "settings": [
+    
+      ]
+    }
+{% endschema %}

@@ -3,7 +3,7 @@
 client_id = "0489e40f7a34e1eb2465f2815f9d4eb8"
 name = "digitalocean-test"
 handle = "digitalocean-test"
-application_url = "https://intended-winds-friendly-conscious.trycloudflare.com"
+application_url = "https://gazette-warcraft-gods-expenses.trycloudflare.com"
 embedded = true
 
 [build]
@@ -13,13 +13,13 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_checkout_branding_settings,read_checkouts,read_discounts,read_metaobject_definitions,read_metaobjects,read_orders,read_products,read_themes,write_checkout_branding_settings,write_checkouts,write_discounts,write_metaobject_definitions,write_metaobjects,write_orders,write_products,write_themes"
 
 [auth]
 redirect_urls = [
-  "https://intended-winds-friendly-conscious.trycloudflare.com/auth/callback",
-  "https://intended-winds-friendly-conscious.trycloudflare.com/auth/shopify/callback",
-  "https://intended-winds-friendly-conscious.trycloudflare.com/api/auth/callback"
+  "https://gazette-warcraft-gods-expenses.trycloudflare.com/auth/callback",
+  "https://gazette-warcraft-gods-expenses.trycloudflare.com/auth/shopify/callback",
+  "https://gazette-warcraft-gods-expenses.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
@@ -28,6 +28,11 @@ api_version = "2024-07"
   [[webhooks.subscriptions]]
   topics = [ "app/uninstalled" ]
   uri = "/webhooks"
+
+[app_proxy]
+url = "https://gazette-warcraft-gods-expenses.trycloudflare.com/app/api/greenworks"
+subpath = "greenworks"
+prefix = "apps"
 
 [pos]
 embedded = false

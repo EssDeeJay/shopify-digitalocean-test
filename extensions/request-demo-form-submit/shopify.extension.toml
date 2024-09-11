@@ -1,0 +1,56 @@
+[[extensions]]
+name = "request-demo-form-submit"
+handle = "request-demo-form-submit"
+type = "flow_trigger"
+
+description = "Extension for triggering the shopify email with request demo submission on frontend."
+
+[settings]
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "name"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "email"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "phone"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "company name"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "company address"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "apt suite"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "city"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "postal code"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "province"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "products"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "terms conditions"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "comments"

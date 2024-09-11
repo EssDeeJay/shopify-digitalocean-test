@@ -1,0 +1,52 @@
+[[extensions]]
+name = "become-dealer-form-submit"
+handle = "become-dealer-form-submit"
+type = "flow_trigger"
+
+description = "Extension for triggering the shopify email with become dealer form submission on frontend."
+
+[settings]
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "first name"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "last name"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "dealer name"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "city"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "province"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "postal code"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "phone"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "email"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "interested products"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "terms conditions"
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "comments"
